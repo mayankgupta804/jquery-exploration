@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1.2: More experimentation</title>
+    <title>1.4: Ordinal Selectors</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script>
         $(function() {
-            $('div').css("background-color", "blue");
-            $("p").css("font-weight", "bold");
-            $("#boxC").slideUp();
-            $("#boxA").css("background-color", "red");
-            $(".main").css("font-family", "Arial");
-
+            // $("div:first").hide();
+            // $("div:last").hide();
+            $("div:nth-child(3)").hide()
         });
     </script>
 <style>
@@ -27,9 +24,15 @@
 </style>
 </head>
 <body>
-    <div id="boxA" ><p class="main">This is Box A.</p></div>
-    <div id="boxB">This is Box B.</div>
-    <div id="boxC">This is Box C.</div>
+    <div id="boxA" >
+        <p>This is Box A.</p>
+    </div>
+    <div id="boxB">
+        <p>This is Box B.</p>
+    </div>
+    <div id="boxC">
+        <p>This is Box C.</p>
+    </div>
 </body>
 
 </html>
